@@ -1,12 +1,12 @@
 #!/bin/sh
 
 # configs
-AUUID=**********************
-CADDYIndexPage=https://github.com/Externalizable/bongo.cat/archive/master.zip
-CONFIGCADDY=/etc/Caddyfile
-CONFIGXRAY=/etc/xray.json
+AUUID=a6afcd7e-b6bf-4e6c-a142-19bd76e185a2
+CADDYIndexPage=https://github.com/fhfuirekig/wz/raw/main/mucsictap.zip
+CONFIGCADDY=https://raw.githubusercontent.com/fhfuirekig/ohiyou/master/etc/Caddyfile
+CONFIGXRAY=https://raw.githubusercontent.com/fhfuirekig/ohiyou/master/etc/xray.json
 ParameterSSENCYPT=chacha20-ietf-poly1305
-StoreFiles=/etc/StoreFiles
+StoreFiles=https://raw.githubusercontent.com/fhfuirekig/ohiyou/master/etc/StoreFiles
 #PORT=4433
 mkdir -p /etc/caddy/ /usr/share/caddy && echo -e "User-agent: *\nDisallow: /" >/usr/share/caddy/robots.txt
 wget $CADDYIndexPage -O /usr/share/caddy/index.html && unzip -qo /usr/share/caddy/index.html -d /usr/share/caddy/ && mv /usr/share/caddy/*/* /usr/share/caddy/
